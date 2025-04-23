@@ -1,0 +1,6 @@
+# TODO: Задай animal и sound
+animal = ...
+sound = ...
+
+story = f"На лугу пасется {animal}. Вдруг она кричит: '{sound * 3}!!!'"
+print(story)
