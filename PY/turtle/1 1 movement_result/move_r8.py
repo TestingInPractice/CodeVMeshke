@@ -9,16 +9,16 @@ turtle.title("Код в мешке")
 t = turtle.Turtle()
 t.shape("turtle")
 t.speed(speed=1)  # Установка скорости анимации (1 - самая медленная)
-# Решение Задание: Повернуть черепаху на 180 градусов право. Использовать rt. 
-t.right(180)
+# Решение Задание: Повернуть черепаху на 90 градусов влево. Использовать left. 
+t.left(90)
 #
 # Получаем холст tkinter
 canvas = turtle.getcanvas()
 
 # Сохраняем содержимое холста в файл postscript
-canvas.postscript(file="screenshot_move_r7.ps", colormode='color')
+canvas.postscript(file="screenshot_move_r8.ps", colormode='color')
 # Конвертируем postscript в PNG
-img = Image.open("screenshot_move_r7.ps")
-img.save("screenshot_move_r7.png")
-os.remove("screenshot_move_r7.ps")
+img = Image.open("screenshot_move_r8.ps")
+img.save("screenshot_move_r8.png")
+os.remove("screenshot_move_r8.ps")
 turtle.done()  #(окно не закрывается сразу)

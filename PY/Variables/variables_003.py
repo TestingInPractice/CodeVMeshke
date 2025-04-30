@@ -1,2 +1,6 @@
-name = input("Введите ваше имя: ")
-print(f"Привет, {name}! Как дела?")
+# TODO: Задай city и greeting
+city = ...
+greeting = ...
+
+message = greeting + ", " + city + "!"
+print(message)

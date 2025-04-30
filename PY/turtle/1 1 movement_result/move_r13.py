@@ -9,16 +9,20 @@ turtle.title("Код в мешке")
 t = turtle.Turtle()
 t.shape("turtle")
 t.speed(speed=1)  # Установка скорости анимации (1 - самая медленная)
-# Решение Задание: Установить позицию черепашки (-50,-50). Использовать setposition. 
-t.setposition(-50,-50)
-#
+# Решение Задание: Установить позицию черепашки (100,0). Использовать setx. 
+t.setx(100)
+# переменная с номером задачи
+num=13
 # Получаем холст tkinter
 canvas = turtle.getcanvas()
-
 # Сохраняем содержимое холста в файл postscript
-canvas.postscript(file="screenshot_move_r12.ps", colormode='color')
+filename_ps = f"screenshot_move_r{num}.ps"
+filename_png = f"screenshot_move_r{num}.png"
+# Сохраняем содержимое холста в файл postscript
+canvas.postscript(file=filename_ps, colormode='color')
 # Конвертируем postscript в PNG
-img = Image.open("screenshot_move_r12.ps")
-img.save("screenshot_move_r12.png")
-os.remove("screenshot_move_r12.ps")
+img = Image.open(filename_ps)
+img.save(filename_png)
+# Удаляем временный файл
+os.remove(filename_ps)
 turtle.done()  #(окно не закрывается сразу)

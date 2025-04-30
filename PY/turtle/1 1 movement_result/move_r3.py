@@ -9,16 +9,16 @@ turtle.title("Код в мешке")
 t = turtle.Turtle()
 t.shape("turtle")
 t.speed(speed=1)  # Установка скорости анимации (1 - самая медленная)
-# Решение Задание: Переместить черепаху на 150 пикселей прямо. Использовать fd.
-t.fd(150)
+# Решение Задание: Переместить черепаху на 100 пикселей назад. Использовать back.
+t.back(100)
 #
 # Получаем холст tkinter
 canvas = turtle.getcanvas()
 
 # Сохраняем содержимое холста в файл postscript
-canvas.postscript(file="screenshot_move_r2.ps", colormode='color')
+canvas.postscript(file="screenshot_move_r3.ps", colormode='color')
 # Конвертируем postscript в PNG
-img = Image.open("screenshot_move_r2.ps")
-img.save("screenshot_move_r2.png")
-os.remove("screenshot_move_r2.ps")
+img = Image.open("screenshot_move_r3.ps")
+img.save("screenshot_move_r3.png")
+os.remove("screenshot_move_r3.ps")
 turtle.done()  #(окно не закрывается сразу)

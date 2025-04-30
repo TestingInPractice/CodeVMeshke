@@ -9,13 +9,13 @@ turtle.title("Код в мешке")
 t = turtle.Turtle()
 t.shape("turtle")
 t.speed(speed=1)  # Установка скорости анимации (1 - самая медленная)
-# Решение
-t.forward(150)
-print("Текущая позиция:", t.position())
-t.write(t.position())
+# Решение Задание: Перейти в координаты (100,100)
+# Вывести текущие координаты черепашки на экран. Использовать goto+pos+ write+home
+t.goto(100,100)
+t.write(t.pos())
 t.home()
 # переменная с номером задачи
-num=1
+num=2
 # Получаем холст tkinter
 canvas = turtle.getcanvas()
 # Сохраняем содержимое холста в файл postscript

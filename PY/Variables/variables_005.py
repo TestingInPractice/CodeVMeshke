@@ -1,2 +1,6 @@
-name = input("Введите ваше имя: ")
-print(f"Привет, {name}! Как дела?")
+# TODO: Задай animal и sound
+animal = ...
+sound = ...
+
+story = f"На лугу пасется {animal}. Вдруг она кричит: '{sound * 3}!!!'"
+print(story)

@@ -10,17 +10,17 @@ t = turtle.Turtle()
 t.shape("turtle")
 t.speed(speed=1)  # Установка скорости анимации (1 - самая медленная)
 # Решение
-t.forward(100)
-print(t.pos())
-print(t.towards(0,0))
-
+t.forward(150)
+print("Текущая позиция:", t.position())
+t.write(t.position())
+t.home()
 # переменная с номером задачи
 num=1
 # Получаем холст tkinter
 canvas = turtle.getcanvas()
 # Сохраняем содержимое холста в файл postscript
-filename_ps = f"screenshot_st{num}.ps"
-filename_png = f"screenshot_st{num}.png"
+filename_ps = f"screenshot_st_r{num}.ps"
+filename_png = f"screenshot_st_r{num}.png"
 # Сохраняем содержимое холста в файл postscript
 canvas.postscript(file=filename_ps, colormode='color')
 # Конвертируем postscript в PNG

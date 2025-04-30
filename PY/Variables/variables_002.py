@@ -1,2 +1,6 @@
-name = input("Введите ваше имя: ")
-print(f"Привет, {name}! Как дела?")
+# TODO: Задай num1 и num2
+num1 = ...
+num2 = ...
+
+result = num1 + num2
+print(f"Сумма: {result}")

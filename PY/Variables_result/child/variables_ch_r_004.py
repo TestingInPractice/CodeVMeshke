@@ -1,3 +1,6 @@
-num1 = int(input())
-num2 = int(input())
-print(f"Первое число: {num1}, Второе число: {num2}")
+x = "яблоко"
+y = "апельсин"
+temp = x
+x = y
+y = temp
+print(x, y)

@@ -1,22 +1,24 @@
 import turtle
+from PIL import Image
+import os
 # Настройки окна
 turtle.setup(800, 600)
-turtle.bgpic("auto_grid.gif")  # Укажите правильный путь к файлу!
-turtle.title("Черепашка на координатной сетке")
+turtle.bgpic("auto_grid.gif")  # файл сетки
+turtle.title("Код в мешке")
 # Настройки черепашки
 t = turtle.Turtle()
 t.shape("turtle")
-# Пример движения
 t.speed(speed=1)  # Установка скорости анимации (1 - самая медленная)
-t.goto(25,25)  # Перемещение в точку с координатами (25,25)
-t.dot(size=5)  # Рисование точки диаметром 5 в текущей позиции
+# Решение Задание: Переместить черепаху на 100 пикселей прямо. Использовать forward.
+t.forward(100)
+#
+# Получаем холст tkinter
+canvas = turtle.getcanvas()
 
-t.goto(50,50)  # Перемещение в точку (50,50)
-t.speed(speed=10)  # Увеличение скорости анимации (10 - максимальная)
-t.circle(25)  # Рисование окружности радиусом 25
-
-t.speed(speed=1)  # Снова медленная скорость
-t.stamp()  # Оставление отпечатка черепашки в текущей позиции
-t.home()  # Возврат в начальную позицию (0,0) без следа
-
-turtle.done()  # Завершение работы с графикой (окно не закрывается сразу)
+# Сохраняем содержимое холста в файл postscript
+canvas.postscript(file="screenshot_move_r1.ps", colormode='color')
+# Конвертируем postscript в PNG
+img = Image.open("screenshot_move_r1.ps")
+img.save("screenshot_move_r1.png")
+os.remove("screenshot_move_r1.ps")
+turtle.done()  #(окно не закрывается сразу)

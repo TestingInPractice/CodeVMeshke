@@ -1,6 +1,3 @@
-# TODO: Задай animal и sound
-animal = ...
-sound = ...
-
-story = f"На лугу пасется {animal}. Вдруг она кричит: '{sound * 3}!!!'"
-print(story)
+# TODO: Исправь ошибку в строке (используй правильные кавычки)
+message = 'Python говорит: "Привет, мир!'
+print(message)
