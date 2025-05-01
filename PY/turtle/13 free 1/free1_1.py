@@ -1,5 +1,4 @@
 import turtle
-import turtledemo.bytedesign
 from PIL import Image
 import os
 # Настройки окна
@@ -19,8 +18,24 @@ t.fillcolor("yellow")
 t.reset()
 t.speed(1)
 
-# Привязка функций к событиям
-turtledemo.bytedesign.main()
+# Первая линия, старт в (0, 0)
+t.penup()
+t.goto(0, 0)
+t.pendown()
+t.goto(100, 50)
+
+# Вторая линия, старт в (0, -50)
+t.penup()
+t.goto(0, -50)
+t.pendown()
+t.goto(100, 0)
+
+# Третья линия, старт в (0, -100)
+t.penup()
+t.goto(0, -100)
+t.pendown()
+t.goto(100, -50)
+
 
 
 # переменная с номером задачи
@@ -28,8 +43,8 @@ num=1
 # Получаем холст tkinter
 canvas = turtle.getcanvas()
 # Сохраняем содержимое холста в файл postscript
-filename_ps = f"screenshot_t_demo{num}.ps"
-filename_png = f"screenshot_t_demo{num}.png"
+filename_ps = f"screenshot_free1_1{num}.ps"
+filename_png = f"screenshot_free1_{num}.png"
 # Сохраняем содержимое холста в файл postscript
 canvas.postscript(file=filename_ps, colormode='color')
 # Конвертируем postscript в PNG
