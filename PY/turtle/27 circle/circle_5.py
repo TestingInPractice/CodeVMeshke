@@ -9,15 +9,11 @@ turtle.title("Код в мешке")
 t = turtle.Turtle()
 t.shape("turtle")
 t.speed(speed=1)  # Установка скорости анимации (1 - самая медленная)
-# Решение
-# Установить цвет пера красный и цвет заливки жёлтый
-t.pencolor("red")
-t.fillcolor("yellow")
 
-# Сбросить всё и начать с чистого листа
-t.reset()
-t.speed(10)
+# https://stepik.org/lesson/1723060/step/5 5.25 Задания черепашка 2 круг
+# Решение Задание Напишите программу на Python с использованием модуля turtle, которая рисует волну с 3 гребнями.
 
+# /CodeVMeshke/PY/turtle/27 circle/circle_5.py
 t.penup()
 t.goto(-75, 0)
 t.pendown()

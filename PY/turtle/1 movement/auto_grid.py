@@ -1,5 +1,8 @@
 from PIL import Image, ImageDraw
 
+# Двигаться и рисовать
+# Задание 3: подложка картинкой https://stepik.org/lesson/1696636/step/3
+
 # Создаем изображение 800x600
 img = Image.new("RGB", (800, 600), "white")
 draw = ImageDraw.Draw(img)

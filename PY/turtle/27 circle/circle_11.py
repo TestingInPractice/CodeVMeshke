@@ -9,18 +9,13 @@ turtle.title("Код в мешке")
 t = turtle.Turtle()
 t.shape("turtle")
 t.speed(speed=1)  # Установка скорости анимации (1 - самая медленная)
-# Решение
-# Установить цвет пера красный и цвет заливки жёлтый
-t.pencolor("red")
-t.fillcolor("yellow")
 
-# Сбросить всё и начать с чистого листа
-t.reset()
-t.speed(3)
+# https://stepik.org/lesson/1723060/step/11 5.25 Задания черепашка 2 круг
+# Решение Задание Нарисуйте половину круга 100
 
+#/CodeVMeshke/PY/turtle/27 circle/circle_11.py
 # Чтобы упростить, возьмём radius = 57
 radius = 50
-
 # Рисуем полукруг (180 градусов) с 360 шагами (очень гладко)
 t.circle(radius, extent=180, steps=50)
 t.left(90)

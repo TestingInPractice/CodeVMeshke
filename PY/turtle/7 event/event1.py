@@ -9,6 +9,7 @@ turtle.title("Код в мешке")
 t = turtle.Turtle()
 t.shape("turtle")
 t.speed(speed=1)  # Установка скорости анимации (1 - самая медленная)
+# https://stepik.org/lesson/1707359/step/1 5.13 Использование событий
 # Решение
 # Установить цвет пера красный и цвет заливки жёлтый
 t.pencolor("red")

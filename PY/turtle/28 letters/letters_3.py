@@ -9,8 +9,11 @@ turtle.title("Код в мешке")
 t = turtle.Turtle()
 t.shape("turtle")
 t.speed(speed=3)  # Установка скорости анимации (1 - самая медленная)
+
+# https://stepik.org/lesson/1809578/step/3 5.28 Задания черепашки Буквы
 # Решение Буква Г
 
+#/CodeVMeshke/PY/turtle/28 letters/letters_3.py
 t.penup()
 t.goto(50, 150)
 t.pendown()

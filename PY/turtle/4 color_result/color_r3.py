@@ -9,7 +9,9 @@ turtle.title("Код в мешке")
 t = turtle.Turtle()
 t.shape("turtle")
 t.speed(speed=1)  # Установка скорости анимации (1 - самая медленная)
-# Решение
+# https://stepik.org/lesson/1707356/step/7 5.10 Управление цветом+Заполнение+Больше контроля рисования
+# Решение Задание: Установить цвет заливки розовый. Нарисовать заполненный круг радиусом 50.
+# Использовать fillcolor+begin_fill+circle+end_fill
 t.fillcolor("pink")
 t.begin_fill()
 t.circle(50)

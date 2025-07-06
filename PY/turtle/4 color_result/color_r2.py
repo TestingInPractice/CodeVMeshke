@@ -9,7 +9,9 @@ turtle.title("Код в мешке")
 t = turtle.Turtle()
 t.shape("turtle")
 t.speed(speed=1)  # Установка скорости анимации (1 - самая медленная)
-# Решение
+# https://stepik.org/lesson/1707356/step/6 5.10 Управление цветом+Заполнение+Больше контроля рисования
+# Решение Задание: Установить цвет пера зелёный.
+# Опустить ручку и нарисовать линию вперёд на 150 шагов. Использовать pencolor = pendown+ forward
 t.pencolor("green")
 t.pendown()
 t.forward(150)

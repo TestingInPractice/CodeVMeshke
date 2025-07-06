@@ -8,8 +8,7 @@ t = turtle.Turtle()
 screen = turtle.Screen()
 t.shape("turtle")
 
-
-
+#https://stepik.org/lesson/1727576/step/1 5.16 Общественные классы
 screen = turtle.Screen()
 t = turtle.Turtle()
 

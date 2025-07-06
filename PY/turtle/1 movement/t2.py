@@ -1,4 +1,6 @@
 import turtle
+# Двигаться и рисовать
+# Задание 2: сетки нет, а она нужна https://stepik.org/lesson/1696636/step/2
 
 
 def draw_grid(step=50, color="gray"):

@@ -9,7 +9,9 @@ turtle.title("Код в мешке")
 t = turtle.Turtle()
 t.shape("turtle")
 t.speed(speed=1)  # Установка скорости анимации (1 - самая медленная)
-# Решение
+# https://stepik.org/lesson/1707356/step/3 5.11 Состояние черепахи Видимость
+# Решение Задание: Сделать черепаху невидимой.
+# Переместиться в точку (100, 100), показать черепаху. Использовать hideturtle+goto+showturtle
 t.color("blue", "yellow")
 
 t.hideturtle()  # или t.ht()

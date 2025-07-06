@@ -9,7 +9,8 @@ turtle.title("Код в мешке")
 t = turtle.Turtle()
 t.shape("turtle")
 t.speed(speed=1)  # Установка скорости анимации (1 - самая медленная)
-# Решение
+# https://stepik.org/lesson/1707358/step/1 5.12 Внешний вид
+# Решение Пример: Управление внешним видом черепахи
 # Установить цвет пера красный и цвет заливки жёлтый
 t.pencolor("red")
 t.fillcolor("yellow")

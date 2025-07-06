@@ -9,7 +9,8 @@ turtle.title("Код в мешке")
 t = turtle.Turtle()
 t.shape("turtle")
 t.speed(speed=1)  # Установка скорости анимации (1 - самая медленная)
-# Решение
+# https://stepik.org/lesson/1707358/step/7 5.12 Внешний вид
+# Решение Задание: Повернуть форму черепахи дополнительно на 45 градусов. Использовать  tilt+forward
 t.color("blue", "yellow")
 
 t.tilt(45)

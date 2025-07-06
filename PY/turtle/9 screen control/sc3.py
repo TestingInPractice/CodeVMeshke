@@ -4,6 +4,11 @@ import os
 import turtle
 import random
 
+
+# https://stepik.org/lesson/1727575/step/3 5.15 TurtleScreen Контроль за окном+
+
+
+
 t = turtle.Turtle()
 screen = turtle.Screen()
 t.shape("turtle")

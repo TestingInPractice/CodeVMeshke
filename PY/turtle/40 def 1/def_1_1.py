@@ -9,14 +9,12 @@ turtle.title("Код в мешке")
 t = turtle.Turtle()
 t.shape("turtle")
 t.speed(speed=1)  # Установка скорости анимации (1 - самая медленная)
-# Решение
-# Установить цвет пера красный и цвет заливки жёлтый
-t.pencolor("red")
-t.fillcolor("yellow")
 
-# Сбросить всё и начать с чистого листа
-t.reset()
-t.speed(3)
+#https://stepik.org/lesson/1744603/step/1 5.39 функции def
+# Нарисовать # Корень y = sqrt(x), x >= 0
+# /CodeVMeshke/PY/turtle/40 def 1/def_1_1.py
+
+
 
 
 def draw_three_lines():

@@ -8,7 +8,7 @@ t = turtle.Turtle()
 screen = turtle.Screen()
 t.shape("turtle")
 
-
+# https://stepik.org/lesson/1727575/step/4 5.15 TurtleScreen Контроль за окном+
 
 
 screen = turtle.Screen()

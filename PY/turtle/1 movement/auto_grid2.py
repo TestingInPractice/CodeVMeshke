@@ -1,4 +1,7 @@
 from PIL import Image, ImageDraw, ImageFont
+#
+#Двигаться и рисовать https://stepik.org/lesson/1696636/step/3
+#Скрипт генерации подложки сетки с осяки координат
 
 # Создаем изображение 800x600 пикселей
 width, height = 800, 600

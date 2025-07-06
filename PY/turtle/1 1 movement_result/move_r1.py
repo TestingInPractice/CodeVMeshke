@@ -1,6 +1,9 @@
 import turtle
 from PIL import Image
 import os
+#
+#https://stepik.org/lesson/1696636/step/1 пример с сеткой
+
 # Настройки окна
 turtle.setup(800, 600)
 turtle.bgpic("auto_grid.gif")  # файл сетки
@@ -9,6 +12,7 @@ turtle.title("Код в мешке")
 t = turtle.Turtle()
 t.shape("turtle")
 t.speed(speed=1)  # Установка скорости анимации (1 - самая медленная)
+# https://stepik.org/lesson/1724290/step/1 5.4 Двигаться и рисовать - задания 1
 # Решение Задание: Переместить черепаху на 100 пикселей прямо. Использовать forward.
 t.forward(100)
 #

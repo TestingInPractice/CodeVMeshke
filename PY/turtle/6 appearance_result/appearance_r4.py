@@ -9,7 +9,8 @@ turtle.title("Код в мешке")
 t = turtle.Turtle()
 t.shape("turtle")
 t.speed(speed=1)  # Установка скорости анимации (1 - самая медленная)
-# Решение
+# https://stepik.org/lesson/1707358/step/5 5.12 Внешний вид
+# Решение Задание: Установить коэффициент сдвига формы черепахи на 0.7 и нарисовать линию. Использовать shearfactor+forward
 t.color("blue", "yellow")
 
 t.shearfactor(0.7)

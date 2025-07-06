@@ -9,7 +9,9 @@ turtle.title("Код в мешке")
 t = turtle.Turtle()
 t.shape("turtle")
 t.speed(speed=1)  # Установка скорости анимации (1 - самая медленная)
-# Решение
+# https://stepik.org/lesson/1707356/step/5 5.10 Управление цветом+Заполнение+Больше контроля рисования
+# Решение Задание: Установить цвет пера синий, цвет заливки жёлтый.
+# Нарисовать заполненный круг диаметром 100. Использовать color+begin_fill+circle+end_fill
 t.color("blue", "yellow")
 t.begin_fill()
 t.circle(100)

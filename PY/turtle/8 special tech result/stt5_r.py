@@ -9,7 +9,8 @@ turtle.title("Код в мешке")
 t = turtle.Turtle()
 t.shape("turtle")
 t.speed(speed=1)  # Установка скорости анимации (1 - самая медленная)
-# Решение
+# https://stepik.org/lesson/1707360/step/8 5.14 Специальные методы Turtle
+# Решение Задание: Нарисовать линию, отменить последнее действие и вывести количество оставшихся записей в буфере отмены, перейти в дом. Использовать forward+write+undobufferentries+home
 t.color("blue", "red")
 
 
