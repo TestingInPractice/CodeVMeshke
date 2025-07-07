@@ -9,14 +9,11 @@ turtle.title("Код в мешке")
 t = turtle.Turtle()
 t.shape("turtle")
 t.speed(speed=1)  # Установка скорости анимации (1 - самая медленная)
-# Решение
-# Установить цвет пера красный и цвет заливки жёлтый
-t.pencolor("red")
-t.fillcolor("yellow")
 
-# Сбросить всё и начать с чистого листа
-t.reset()
-t.speed(3)
+
+#https://stepik.org/lesson/1768652/step/6 5.40 def 2 Задания
+# Нарисовать Нарисовать пятиконечную морскую звезду с помощью процедуры.
+# /CodeVMeshke/PY/turtle/40 def 2/def_2_6.py
 
 def draw_star(length):
     for _ in range(5):

@@ -9,31 +9,32 @@ turtle.title("Код в мешке")
 t = turtle.Turtle()
 t.shape("turtle")
 t.speed(speed=1)  # Установка скорости анимации (1 - самая медленная)
-# Решение
-# Установить цвет пера красный и цвет заливки жёлтый
-t.pencolor("red")
-t.fillcolor("yellow")
 
-# Сбросить всё и начать с чистого листа
-t.reset()
-t.speed(1)
+#https://stepik.org/lesson/1744603/step/2 5.39 функции def
+# Нарисовать Пример функции с параметром
+# /CodeVMeshke/PY/turtle/39 def 1/def_1_4.py
 
-def draw_equilateral_triangle(side_length):
-    for _ in range(3):
-        t.forward(side_length)
-        t.left(120)  # угол поворота для правильного треугольника
+def line_without_moving(length):
+    t.forward(length)
+    t.backward(length)
 
-# Пример вызова процедуры:
-draw_equilateral_triangle(150)
+# Вызов функции с разными аргументами
+t.left(30)
+line_without_moving(50)
+t.left(30)
+line_without_moving(80)
+
+
+
 
 
 # переменная с номером задачи
-num=1
+num=4
 # Получаем холст tkinter
 canvas = turtle.getcanvas()
 # Сохраняем содержимое холста в файл postscript
-filename_ps = f"screenshot_def_3_{num}.ps"
-filename_png = f"screenshot_def_3_{num}.png"
+filename_ps = f"screenshot_def_1_{num}.ps"
+filename_png = f"screenshot_def_1_{num}.png"
 # Сохраняем содержимое холста в файл postscript
 canvas.postscript(file=filename_ps, colormode='color')
 # Конвертируем postscript в PNG

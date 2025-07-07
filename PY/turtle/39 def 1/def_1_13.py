@@ -1,5 +1,6 @@
 import turtle
 from PIL import Image
+import math
 import os
 # Настройки окна
 turtle.setup(800, 600)
@@ -9,28 +10,43 @@ turtle.title("Код в мешке")
 t = turtle.Turtle()
 t.shape("turtle")
 t.speed(speed=1)  # Установка скорости анимации (1 - самая медленная)
-# Решение
-# Установить цвет пера красный и цвет заливки жёлтый
-t.pencolor("red")
-t.fillcolor("yellow")
 
-# Сбросить всё и начать с чистого листа
-t.reset()
-t.speed(3)
 
-def hexagon(size):
-    for _ in range(6):
-        t.forward(size)
-        t.left(60)
+#https://stepik.org/lesson/1744603/step/6 5.39 функции def
+# Нарисовать #Нарисовать несколько многоугольников с использованием функций и цикла. Использовать циклы для упрощения и сокращения кода.
+# /CodeVMeshke/PY/turtle/39 def 1/def_1_13.py
 
-hexagon(100)
-hexagon(50)
+
+
+def move_to(x, y, color):
+    t.penup()
+    t.goto(x, y)
+    t.pendown()
+    t.color(color)
+    t.begin_fill()
+
+def draw_polygon(sides, length):
+    angle = 360 / sides
+    for _ in range(sides):
+        t.forward(length)
+        t.right(angle)
+    t.end_fill()
+
+
+colors = ['red', 'green', 'blue', 'cyan', 'magenta']
+x_positions = [0, 100, -100, 100, -100]
+y_positions = [0, 100, -100, -100, 100]
+
+for i in range(len(colors)):
+    move_to(x_positions[i], y_positions[i], colors[i])
+    draw_polygon(i + 3, 50)  # количество сторон от 3 до 7
+
 
 
 
 
 # переменная с номером задачи
-num=6
+num=13
 # Получаем холст tkinter
 canvas = turtle.getcanvas()
 # Сохраняем содержимое холста в файл postscript

@@ -9,28 +9,27 @@ turtle.title("Код в мешке")
 t = turtle.Turtle()
 t.shape("turtle")
 t.speed(speed=1)  # Установка скорости анимации (1 - самая медленная)
-# Решение
-# Установить цвет пера красный и цвет заливки жёлтый
-t.pencolor("red")
-t.fillcolor("yellow")
 
-# Сбросить всё и начать с чистого листа
-t.reset()
-t.speed(3)
 
-def draw_shape(sides, length):
-    for _ in range(sides):
-        t.forward(length)
-        t.right(360 / sides)
+#https://stepik.org/lesson/1744603/step/2 5.39 функции def
+# Нарисовать Функция с несколькими параметрами
+# /CodeVMeshke/PY/turtle/39 def 1/def_1_5.py
 
-draw_shape(3, 80)# треугольник
-draw_shape(5, 60)# пятиугольник
-draw_shape(8, 40)# восьмиугольник
+
+def tilted_line_without_moving(length, angle):
+    t.left(angle)
+    t.forward(length)
+    t.backward(length)
+    t.right(angle)
+
+tilted_line_without_moving(50, 30)
+tilted_line_without_moving(70, 60)
+
 
 
 
 # переменная с номером задачи
-num=7
+num=5
 # Получаем холст tkinter
 canvas = turtle.getcanvas()
 # Сохраняем содержимое холста в файл postscript

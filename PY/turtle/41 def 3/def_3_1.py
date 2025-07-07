@@ -9,38 +9,27 @@ turtle.title("Код в мешке")
 t = turtle.Turtle()
 t.shape("turtle")
 t.speed(speed=1)  # Установка скорости анимации (1 - самая медленная)
-# Решение
-# Установить цвет пера красный и цвет заливки жёлтый
-t.pencolor("red")
-t.fillcolor("yellow")
 
-# Сбросить всё и начать с чистого листа
-t.reset()
-t.speed(3)
+#https://stepik.org/lesson/1768655/step/1 5.41 def 3 Задания
+# Нарисовать Составьте процедуру, которая рисует правильный треугольник с заданной длиной стороны, передаваемой в качестве параметра.
+# /CodeVMeshke/PY/turtle/41 def 3/def_3_1.py
 
-def draw_square():
-    for _ in range(4):
-        t.forward(50)
-        t.left(90)
+def draw_equilateral_triangle(side_length):
+    for _ in range(3):
+        t.forward(side_length)
+        t.left(120)  # угол поворота для правильного треугольника
 
-for i in range(4):
-    t.penup()
-    t.goto(i * 100, 0)
-    t.pendown()
-    if i % 2 == 1:  # нечётные квадраты
-        t.setheading(45)
-    else:  # чётные квадраты
-        t.setheading(0)
-    draw_square()
-    t.setheading(0)  # сброс направления для следующего квадрата
+# Пример вызова процедуры:
+draw_equilateral_triangle(150)
+
 
 # переменная с номером задачи
-num=2
+num=1
 # Получаем холст tkinter
 canvas = turtle.getcanvas()
 # Сохраняем содержимое холста в файл postscript
-filename_ps = f"screenshot_def_2_{num}.ps"
-filename_png = f"screenshot_def_2_{num}.png"
+filename_ps = f"screenshot_def_3_{num}.ps"
+filename_png = f"screenshot_def_3_{num}.png"
 # Сохраняем содержимое холста в файл postscript
 canvas.postscript(file=filename_ps, colormode='color')
 # Конвертируем postscript в PNG

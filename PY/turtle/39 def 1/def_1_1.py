@@ -9,43 +9,35 @@ turtle.title("Код в мешке")
 t = turtle.Turtle()
 t.shape("turtle")
 t.speed(speed=1)  # Установка скорости анимации (1 - самая медленная)
-# Решение
-# Установить цвет пера красный и цвет заливки жёлтый
-t.pencolor("red")
-t.fillcolor("yellow")
 
-# Сбросить всё и начать с чистого листа
-t.reset()
-t.speed(3)
+#https://stepik.org/lesson/1744603/step/1 5.39 функции def
+# Нарисовать Пример 1: Процедура для рисования трёх линий
+# /CodeVMeshke/PY/turtle/39 def 1/def_1_1.py
 
 
-def draw_square():
-    for _ in range(4):
+
+
+def draw_three_lines():
+    for _ in range(3):
+        t.right(20)
         t.forward(50)
-        t.left(90)
+        t.penup()
+        t.backward(50)
+        t.right(100)
+        t.pendown()
 
-# Координаты центров квадратов для креста
-positions = [
-    (0, 0),          # центр
-    (0, 60),         # сверху
-    (0, -60),        # снизу
-    (-60, 0),        # слева
-    (60, 0)          # справа
-]
+draw_three_lines()
 
-for x, y in positions:
-    t.penup()
-    t.goto(x, y)
-    t.pendown()
-    draw_square()
+
+
 
 # переменная с номером задачи
-num=4
+num=1
 # Получаем холст tkinter
 canvas = turtle.getcanvas()
 # Сохраняем содержимое холста в файл postscript
-filename_ps = f"screenshot_def_2_{num}.ps"
-filename_png = f"screenshot_def_2_{num}.png"
+filename_ps = f"screenshot_def_1_{num}.ps"
+filename_png = f"screenshot_def_1_{num}.png"
 # Сохраняем содержимое холста в файл postscript
 canvas.postscript(file=filename_ps, colormode='color')
 # Конвертируем postscript в PNG

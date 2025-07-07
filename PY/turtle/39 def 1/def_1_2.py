@@ -1,6 +1,5 @@
 import turtle
 from PIL import Image
-import math
 import os
 # Настройки окна
 turtle.setup(800, 600)
@@ -10,42 +9,19 @@ turtle.title("Код в мешке")
 t = turtle.Turtle()
 t.shape("turtle")
 t.speed(speed=1)  # Установка скорости анимации (1 - самая медленная)
-# Решение
-# Установить цвет пера красный и цвет заливки жёлтый
-t.pencolor("red")
-t.fillcolor("yellow")
 
-# Сбросить всё и начать с чистого листа
-t.reset()
-t.speed(3)
+#https://stepik.org/lesson/1744603/step/1 5.39 функции def
+# Нарисовать Пример 2: Процедура для рисования круга
+# /CodeVMeshke/PY/turtle/39 def 1/def_1_2.py
 
-#
+def draw_circle():
+    t.circle(40)
 
-radius = 100
-
-# Вычисляем смещение между центрами (сторона треугольника)
-side = radius * math.sqrt(3)
-
-# Верхний круг (синий)
+draw_circle()
 t.penup()
-t.goto(0, radius)
+t.goto(100, 0)
 t.pendown()
-t.pencolor("blue")
-t.circle(radius)
-
-# Левый нижний круг (красный)
-t.penup()
-t.goto(-side/2, -radius/2)
-t.pendown()
-t.pencolor("red")
-t.circle(radius)
-
-# Правый нижний круг (зелёный)
-t.penup()
-t.goto(side/2, -radius/2)
-t.pendown()
-t.pencolor("green")
-t.circle(radius)
+draw_circle()
 
 
 
@@ -53,7 +29,7 @@ t.circle(radius)
 
 
 # переменная с номером задачи
-num=11
+num=2
 # Получаем холст tkinter
 canvas = turtle.getcanvas()
 # Сохраняем содержимое холста в файл postscript

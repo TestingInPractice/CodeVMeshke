@@ -9,14 +9,12 @@ turtle.title("Код в мешке")
 t = turtle.Turtle()
 t.shape("turtle")
 t.speed(speed=1)  # Установка скорости анимации (1 - самая медленная)
-# Решение
-# Установить цвет пера красный и цвет заливки жёлтый
-t.pencolor("red")
-t.fillcolor("yellow")
 
-# Сбросить всё и начать с чистого листа
-t.reset()
-t.speed(3)
+
+#https://stepik.org/lesson/1744603/step/1 5.39 функции def
+# Нарисовать Пример 2: Процедура для рисования круга
+# /CodeVMeshke/PY/turtle/39 def 1/def_1_3.py
+
 
 def draw_square():
     for _ in range(4):

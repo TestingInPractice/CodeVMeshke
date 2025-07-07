@@ -9,42 +9,25 @@ turtle.title("Код в мешке")
 t = turtle.Turtle()
 t.shape("turtle")
 t.speed(speed=1)  # Установка скорости анимации (1 - самая медленная)
-# Решение
-# Установить цвет пера красный и цвет заливки жёлтый
-t.pencolor("red")
-t.fillcolor("yellow")
-
-# Сбросить всё и начать с чистого листа
-t.reset()
-t.speed(3)
 
 
+#https://stepik.org/lesson/1768652/step/5 5.40 def 2 Задания
+# Нарисовать Нарисовать 6 квадратов со стороной 50 шагов, каждый следующий сдвинут вправо и вверх на 50 шагов, чтобы получилась фигура в виде ступенек.
+# /CodeVMeshke/PY/turtle/40 def 2/def_2_5.py
 
-def draw_ring(x, y, color, radius):
+def draw_square():
+    for _ in range(4):
+        t.forward(50)
+        t.left(90)
+
+for i in range(6):
     t.penup()
-    t.goto(x, y - radius)
+    t.goto(i * 50, i * 50)  # сдвиг вправо и вверх на 50 шагов для каждого квадрата
     t.pendown()
-    t.pencolor(color)
-    t.circle(radius)
-
-radius = 25  # Диаметр 50, значит радиус 25
-dx = 60      # Горизонтальное расстояние между центрами колец
-dy = 30      # Вертикальное смещение для нижнего ряда
-
-# Верхний ряд
-draw_ring(0, 0, "blue", radius)
-draw_ring(dx, 0, "black", radius)
-draw_ring(2*dx, 0, "red", radius)
-
-# Нижний ряд
-draw_ring(dx//2, -dy, "yellow", radius)
-draw_ring(dx + dx//2, -dy, "green", radius)
-
-
-
+    draw_square()
 
 # переменная с номером задачи
-num=8
+num=5
 # Получаем холст tkinter
 canvas = turtle.getcanvas()
 # Сохраняем содержимое холста в файл postscript
