@@ -9,6 +9,6 @@ turtle.title("Черепашка на координатной сетке")
 t = turtle.Turtle()
 t.shape("turtle")
 # Пример движения
-t.goto(50,50)
+t.goto(150,-150)
 t.home()
 turtle.done()

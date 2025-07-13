@@ -14,17 +14,17 @@ t.speed(speed=1)  # Установка скорости анимации (1 - с
 
 #https://stepik.org/lesson/1744608/step/3  5.29 Ввод переменных
 # Решение теория Вывод данных в Python и в модуле turtle
-#/CodeVMeshke/PY/turtle/31 variables/variables_3.py
+#/CodeVMeshke/PY/turtle/31 variables/variables_3_1.py
+from datetime import datetime
 
-
-txt = input("Введите текст для вывода: ")
+side = 100
+txt = datetime.now()
 t.penup()
 t.goto(50,50)
-t.write(txt, move=True, align="center", font=("Arial", 16, "normal"))
+t.write(txt)
 t.goto(50,30)
-a = int(input("Введите число: "))
-t.write(a, move=True, align="right", font=("Arial", 20, "bold"))
-
+t.write(side)
+t.home()
 
 
 

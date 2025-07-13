@@ -1,5 +1,6 @@
-
 import turtle
+from PIL import Image
+import os
 
 # https://stepik.org/lesson/1727575/step/1 5.15 TurtleScreen Контроль за окном+
 
@@ -29,6 +30,7 @@ print("Фоновое изображение после удаления:", scre
 
 # 3. Нарисовать линию и очистить только рисунок
 t = turtle.Turtle()
+t.speed(1)
 t.forward(100)
 t.clear()  # Очищает рисунок, черепаха остаётся на месте
 
@@ -53,3 +55,19 @@ for _ in range(2):
     t.left(90)
 
 turtle.done()
+
+# переменная с номером задачи
+num=1
+# Получаем холст tkinter
+canvas = turtle.getcanvas()
+# Сохраняем содержимое холста в файл postscript
+filename_ps = f"screenshot_sс{num}.ps"
+filename_png = f"screenshot_sс{num}.png"
+# Сохраняем содержимое холста в файл postscript
+canvas.postscript(file=filename_ps, colormode='color')
+# Конвертируем postscript в PNG
+img = Image.open(filename_ps)
+img.save(filename_png)
+# Удаляем временный файл
+os.remove(filename_ps)
+turtle.done()  #(окно не закрывается сразу)
