@@ -1,4 +1,5 @@
-age_str = input("Сколько тебе лет? ")
+print("Сколько тебе лет?")
+age_str = input()
 # TODO: Преобразуй age_str в число
 age = ...
 

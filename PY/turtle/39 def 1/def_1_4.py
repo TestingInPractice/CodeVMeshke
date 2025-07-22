@@ -18,10 +18,13 @@ def line_without_moving(length):
     t.forward(length)
     t.backward(length)
 
+len=20
 # Вызов функции с разными аргументами
-t.left(30)
+t.left(25)
+line_without_moving(len)
+t.left(25)
 line_without_moving(50)
-t.left(30)
+t.left(25)
 line_without_moving(80)
 
 

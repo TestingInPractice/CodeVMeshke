@@ -8,51 +8,24 @@ turtle.title("Код в мешке")
 # Настройки черепашки
 t = turtle.Turtle()
 t.shape("turtle")
-t.speed(speed=1)  # Установка скорости анимации (1 - самая медленная)
+t.speed(speed=3)  # Установка скорости анимации (1 - самая медленная)
 
 #https://stepik.org/lesson/1744607/step/1  5.31 Цикл + задания for без условия
-# Решение Использование циклов в Python
-#/CodeVMeshke/PY/turtle/31 cycle 1/cycle_1.py
+# Решение пунктирная линия
 
-
-# for i in range(5):
-#     print(i)
-# # Выведет:
-# # 0
-# # 1
-# # 2
-# # 3
-# # 4
-#
-# for char in "Python":
-#     print(char)
-# # Выведет:
-# # P
-# # y
-# # t
-# # h
-# # o
-# # n
-#
-# colors = ["red", "green", "blue"]
-# for color in colors:
-#     print("Цвет:", color)
-#
-#
-# n = 1
-# while n <= 10:
-#     print(n)
-#     n += 1
-
-# #Таблица умножения
-# for i in range(1, 4):
-#     for j in range(1, 4):
-#         print(i, "*", j, "=", i*j)
-#     print("---")
-
+#/CodeVMeshke/PY/turtle/31 cycle 1/cycle_4_1.py
+step = 10
+for i in range(1, 6):
+    t.pendown()
+    t.forward(i * 30)  # длина линии увеличивается с каждым шагом
+    t.penup()
+    t.backward(i * 30)
+    t.left(90)
+    t.forward(step)
+    t.right(90)
 
 # переменная с номером задачи
-num=1
+num=4
 # Получаем холст tkinter
 canvas = turtle.getcanvas()
 # Сохраняем содержимое холста в файл postscript

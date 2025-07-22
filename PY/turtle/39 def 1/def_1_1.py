@@ -14,19 +14,30 @@ t.speed(speed=1)  # Установка скорости анимации (1 - с
 # Нарисовать Пример 1: Процедура для рисования трёх линий
 # /CodeVMeshke/PY/turtle/39 def 1/def_1_1.py
 
+def three_lines():
+        for _ in range(3):
+                t.right(20)
+                t.forward(50)
+                t.penup()
+                t.backward(50)
+                t.right(100)
+                t.pendown()
+
+three_lines()
+t.goto(50,50)
+three_lines()
 
 
-
-def draw_three_lines():
-    for _ in range(3):
-        t.right(20)
-        t.forward(50)
-        t.penup()
-        t.backward(50)
-        t.right(100)
-        t.pendown()
-
-draw_three_lines()
+# def draw_three_lines():
+#     for _ in range(3):
+#         t.right(20)
+#         t.forward(50)
+#         t.penup()
+#         t.backward(50)
+#         t.right(100)
+#         t.pendown()
+#
+# draw_three_lines()
 
 
 

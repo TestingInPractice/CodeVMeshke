@@ -8,7 +8,7 @@ turtle.title("Код в мешке")
 # Настройки черепашки
 t = turtle.Turtle()
 t.shape("turtle")
-t.speed(speed=1)  # Установка скорости анимации (1 - самая медленная)
+t.speed(speed=3)  # Установка скорости анимации (1 - самая медленная)
 
 
 #https://stepik.org/lesson/1825367/step/1 5.36 Цикл while

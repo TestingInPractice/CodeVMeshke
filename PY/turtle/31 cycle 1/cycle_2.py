@@ -8,15 +8,26 @@ turtle.title("Код в мешке")
 # Настройки черепашки
 t = turtle.Turtle()
 t.shape("turtle")
-t.speed(speed=1)  # Установка скорости анимации (1 - самая медленная)
+t.speed(speed=3)  # Установка скорости анимации (1 - самая медленная)
 
 #https://stepik.org/lesson/1744607/step/1  5.31 Цикл + задания for без условия
 # Решение Пример 2: Рисуем квадрат с помощью Turtle
 # CodeVMeshke/PY/turtle/31 cycle 1/cycle_2.py
 
-for _ in range(4):
-    t.fd(100)
-    t.rt(90)
+
+t.forward(100)
+t.right(90)
+t.forward(100)
+t.right(90)
+t.forward(100)
+t.right(90)
+t.forward(100)
+t.right(90)
+
+
+# for _ in range(4):
+#     t.fd(100)
+#     t.rt(90)
 
 # переменная с номером задачи
 num=2

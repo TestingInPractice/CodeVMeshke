@@ -12,7 +12,7 @@ t.speed(speed=1)  # Установка скорости анимации (1 - с
 
 #https://stepik.org/lesson/1744609/step/1  5.30 Условия If
 # Решение Работа с вводом и условием — пример для черепахи
-#/CodeVMeshke/PY/turtle/32 condition/cond_1.py
+#/CodeVMeshke/PY/turtle/30 condition/cond_1.py
 
 direction = input("Идти налево или направо? ").strip().lower()
 if direction == "left":
