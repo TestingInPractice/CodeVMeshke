@@ -4,8 +4,12 @@
 # question = 'Как зовут собаку программиста? Бублик!'
 # print(question)
 
-phrase = "Это начало строки'
-print(phrase)
+# phrase = "Это начало строки'
+# print(phrase)
+#
+# phrase2 = "Это начало строки
+# print(phrase2)
 
-phrase2 = "Это начало строки
-print(phrase2)
+# poem = '''Рассвет встаёт над рекой,
+# Золотятся воды в лучах.'''
+# print(poem)
